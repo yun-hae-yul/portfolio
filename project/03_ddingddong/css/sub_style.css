@@ -1,0 +1,247 @@
+/* 브랜드 페이지 */
+#brand .titleImg{
+	text-align:center;
+	background:url(../images/brand_images.png) no-repeat center center/cover;
+	box-sizing:border-box;
+	color:white;
+}
+#brand .titleImg h3{
+	padding-top:50px;
+	padding-bottom:20px;
+}
+#brand .titleImg p{padding-bottom:50px;}
+
+.brandMenu li{width:50%;}
+#brand .brandMenu li:nth-child(1) a{color:#00a1e1;}
+#brand .brandMenu li:nth-child(2) a{border-bottom:1px solid #ccc;}
+
+.introduceWrap{clear:both;}
+.introduceTitle{
+	background:#00a1e1;
+	text-align:center;
+	padding:40px;
+	color:white;
+}
+.introduceTitle h2{
+	margin-bottom:10px;
+	color:#ffe49c;
+}
+.introduceTitle p{}
+
+.historyWrap{margin:50px 0;}
+.historyWrap h2{
+	text-align:center;
+	margin-bottom:20px;
+}
+.historyWrap ul{
+	width:80%;
+	margin:0 auto;
+}
+.historyWrap ul li{
+	overflow:auto;
+	width:100%;
+	margin-bottom:10px;
+}
+.historyWrap ul li img{
+	float:left;
+	padding:10px;
+
+}
+
+.historyRight{float:left;}
+.historyWrap ul li:nth-child(1) .historyRight{margin-top:20px;}
+.historyWrap ul li:nth-child(2) .historyRight{margin-top:10px;}
+.historyWrap ul li:nth-child(4) .historyRight{margin-top:10px;}
+.historyWrap ul li:nth-child(5) .historyRight{margin-top:10px;}
+.historyWrap ul li:nth-child(6) .historyRight{margin-top:20px;}
+
+
+
+/* 메뉴 페이지 */
+#menu .titleImg{
+	position:relative;
+	height:200px;
+	width:100%;
+}
+.titleImg ul{
+	overflow:auto;
+	width:350px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.titleImg li{
+	float:left;
+	text-align:center;
+	margin-right:30px;
+	cursor:pointer;
+}
+.titleImg li:last-child{margin-right:0;}
+.titleImg li img{height:95px;}
+.titleImg li h2{color:#444;}
+.titleImg li:first-child h2{color:#00a1e1;}
+.menuList li{width:20%;}
+#menu .menuList li:nth-child(1) a{color:#00a1e1;}
+#menu .menuList li:nth-child(2) a{border-bottom:none;}
+#menu .menuList li:nth-child(3) a{border-bottom:none;}
+.menuImg{
+	clear:both;
+	overflow:auto;
+	text-align:center;
+}
+.menuImg li{
+	border:1px solid #ddd;
+	width:50%;
+	box-sizing:border-box;
+	float:left;
+	padding:20px 0;
+}
+.menuImg li:nth-child(2n-1){border-right:none;}
+.menuImg li{border-bottom:none;}
+.menuImg li:nth-child(19),
+.menuImg li:nth-child(20){border-bottom:1px solid #ddd;}
+.menuImg li img{
+	width:150px;
+}
+.menuImg li h3{}
+.menuImg li p{
+	color:#777;
+}
+.contentWrap>.menuImg{margin-bottom:50px;}
+
+
+
+/* 가맹 안내 페이지 */
+
+#franchise .procedure h3,
+#franchise .qna h3,
+#franchise .contentWrap h3{
+	font-size:1.5em;
+}
+
+#franchise .procedure ul,
+#franchise .qna p,
+#franchise .contentWrap table,
+#franchise .contentWrap .instruction,
+#franchise .formContent
+{
+	font-size:1.2em;
+	letter-spacing:-1px;
+}
+
+/* 가맹 안내 페이지 - 가맹 개설 절차 */
+#franchise .menuList li{width:33.3%;}
+#franchise .menuList li:nth-child(1) a{color:#00a1e1;}
+#franchise .menuList li:nth-child(2) a{border-bottom:1px solid #ccc;}
+#franchise .menuList li:nth-child(3) a{border-bottom:1px solid #ccc;}
+#franchise .content{}
+.contentWrap{clear:both;}
+
+.franchiseContent1{display:none;}
+.procedure{margin:50px 0; text-align:center;}
+.procedure h3{margin-bottom:20px;}
+.procedure ul{}
+.procedure ul li:nth-child(2n-1){
+	background:#d4f3ff;
+	padding:8px 0;
+	margin:5px 0;
+	text-shadow:0 0 0;
+	color:#444;
+}
+.procedure ul li img{}
+
+.qna{
+	text-align:center;
+	background:#eee;
+	padding:20px 0;
+	box-sizing:border-box;
+	margin-bottom:30px;
+}
+.qna ul{}
+.qna ul li{
+	margin:40px auto;
+	width:80%;
+}
+.qna ul li h3{color:#00a1e1;}
+.qna ul li img{margin:10px 0;}
+.qna ul li p{color:#444;}
+
+/* 가맹 안내 페이지 - 가맹 비용 안내 */
+#franchise .franchiseContent2 li:nth-child(1) a{color:#444; border-bottom:1px solid #ccc;}
+#franchise .franchiseContent2 li:nth-child(2) a{color:#00a1e1; border-bottom:2px solid #00a1e1;}
+#franchise .franchiseContent2 li:nth-child(3) a{border-bottom:1px solid #ccc;}
+
+.franchiseContent2{display:none;}
+.franchiseContent2 .contentWrap+.contentWrap{margin:30px auto;}
+
+.franchiseContent2 h3{
+	text-align:center;
+	margin-bottom:20px;
+}
+.franchiseContent2 table,th,tr,td{
+	text-align:center;
+	border:1px solid #ddd;
+	border-collapse:collapse;
+	margin:0 auto;
+}
+.franchiseContent2 table{width:100%;}
+
+.franchiseContent2 th,td{padding:10px;}
+.franchiseContent2 th{background:#eee;}
+.txtColor{color:#00a1e1; font-weight:bold;}
+.franchiseContent2 ul{margin-top:20px;}
+.instruction li{
+	font-size:0.9em;
+	color:#777;
+}
+
+/* 가맹 안내 페이지 - 가맹 문의 */
+/* .franchiseContent3{display:none;} */
+.franchiseContent3{background:white;}
+#franchise .question3 select{border-radius:0;}
+#franchise .franchiseContent3 li:nth-child(1) a{color:#444; border-bottom:1px solid #ccc;}
+#franchise .franchiseContent3 li:nth-child(2) a{color:#444; border-bottom:1px solid #ccc;}
+#franchise .franchiseContent3 li:nth-child(3) a{color:#00a1e1; border-bottom:2px solid #00a1e1;}
+
+
+/* #franchise .formContent{ */
+/* } */
+
+
+/* #franchise form{ */
+	/* display:inline-block; */
+	/* width:100%; */
+/* } */
+
+/* form input{ */
+	/* outline:0; */
+	/* width:100%; */
+	/* height:40px; */
+	/* padding:5px; */
+	/* box-sizing:border-box; */
+	/* margin-top:3px; */
+	/* border:1px solid #ccc; */
+/* } */
+
+/* input[type="submit"]{ */
+	/* background:white; */
+	/* width:100px; */
+	/* height:40px; */
+	/* float:left; */
+/* } */
+
+/* input[type="reset"]{ */
+	/* background:white; */
+	/* width:100px; */
+	/* height:40px; */
+	/* float:left; */
+/* } */
+
+/* .question7{ */
+	/* overflow:auto; */
+/* } */
+/* input[type="checkbox"]{ */
+	/* width:20px; */
+	/* background:red; */
+/* } */
