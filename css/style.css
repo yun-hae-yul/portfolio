@@ -501,11 +501,24 @@ nav {
 
 .photo {
 	grid-row: 1/4;
-	background: #4f4343 url(../images/profile_photo.png) no-repeat center center;
+}
+
+.photo span {
 	padding-right: 10px;
 	text-indent: -9999px;
 	border-radius: 5px;
 	overflow: hidden;
+	height: 100%;
+}
+
+.photo_pc {
+	background: url(../images/profile_photo_pc.png) no-repeat center center;
+	display: block;
+}
+
+.photo_t {
+	background: url(../images/profile_photo_t.png) no-repeat center center;
+	display: none;
 }
 
 .edu {
@@ -533,10 +546,6 @@ nav {
 	background: #e8c4c8;
 	margin-right: 10px;
 	vertical-align: -4px;
-}
-
-.profile dd {
-	line-height: 1.55;
 }
 
 .profile_dsc {
@@ -995,6 +1004,7 @@ address {
 	opacity: .3;
 	background: #b0767a;
 	color: #fff;
+	white-space: nowrap;
 }
 
 
@@ -1056,19 +1066,19 @@ address {
 	border-bottom: 2px solid #eee;
 }
 
-.ppt_btn{
+.ppt_btn {
 	font-size: .9rem;
 	color: #666;
 	margin-left: 10px;
 }
 
-.ppt_btn img{
+.ppt_btn img {
 	width: 12px;
 	vertical-align: -1px;
 	margin-left: 5px;
 }
 
-.ppt_btn:hover{
+.ppt_btn:hover {
 	text-decoration: underline;
 }
 
@@ -1188,8 +1198,6 @@ address {
 		background-size: 500px;
 	}
 
-
-
 	/* about me style */
 	.about_wrap {
 		width: 65%;
@@ -1258,8 +1266,6 @@ address {
 	.about_wrap {
 		width: 80%;
 	}
-
-
 
 	/* publishing project */
 	.pb_project {
@@ -1399,6 +1405,15 @@ address {
 		height: 200px;
 	}
 
+	.photo_pc {
+		display: none;
+	}
+
+	.photo_t {
+		background: url(../images/profile_photo_t.png) no-repeat center center;
+		display: block;
+	}
+
 	.edu {
 		grid-row: 2/4;
 		grid-column: 2;
@@ -1423,10 +1438,6 @@ address {
 		background: #e8c4c8;
 		margin-right: 10px;
 		vertical-align: -4px;
-	}
-
-	.profile dd {
-		line-height: 1.55;
 	}
 
 	.profile_dsc {
@@ -1514,9 +1525,18 @@ address {
 		display: block;
 	}
 
+	/* intro */
+	.txt {
+		font-size: 2.8em;
+		line-height: 70px;
+	}
+	.main_img{
+		width: 300px;
+	}
+
 	/* about me style */
 	#about {
-		min-height: 1600px;
+		min-height: 1860px;
 	}
 
 	.profile_area {
@@ -1540,13 +1560,19 @@ address {
 		grid-column: 1;
 	}
 
+	.profile_tit {
+		font-size: 22px;
+	}
+	.profile_dsc{
+		font-size: 18px;
+	}
+
 	/* skill */
 	.skill {
 		width: calc((100% - 15px) / 3);
-		/* margin-left: 5px;
-		border-radius: 4px; */
 		height: 50px;
 		line-height: 50px;
+		font-size: 1.1em;
 	}
 
 	.skill:nth-child(6n+1) {
@@ -1561,8 +1587,6 @@ address {
 		margin-top: 5px;
 	}
 
-
-
 	/* publishing project */
 	.pb_project {
 		width: 100%;
@@ -1572,8 +1596,6 @@ address {
 	.pb_project:nth-child(n+2) {
 		margin-top: 30px;
 	}
-
-
 
 	/* design portfolio */
 	.dg_project {
@@ -1618,5 +1640,24 @@ address {
 
 	.dg_more {
 		margin: 0;
+	}
+
+	/* modal style */
+	.modal_box {
+		width: 400px;
+		height: 600px;
+	}
+	.modal_txt{
+		padding: 30px 40px;
+	}
+	.modal_pj_tit{
+		text-align: center;
+	}
+	.ppt_btn{
+		display: block;
+		margin-top: 6px;
+	}
+	.modal_btn{
+		padding: 6px 30px;
 	}
 }
