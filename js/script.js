@@ -214,4 +214,8 @@ $(document).ready(function () {
 		alert('초기 시안으로, 실제 작업물과 다소 차이가 있을 수 있는 점 참고 부탁 드립니다.');
 	});
 
+	$('.cv_btn').click(function(){
+		alert('준비 중입니다!');
+	});
+
 });
