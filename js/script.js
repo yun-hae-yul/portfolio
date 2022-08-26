@@ -205,8 +205,13 @@ $(document).ready(function () {
 		document.body.removeChild(p);
 	}
 	$('.phone').click(function () {
-		phoneCopy('010-****-****');
+		phoneCopy('010-****-2292');
 		alert('휴대폰 번호를 복사했어요!');
+	});
+
+	//
+	$('.alert').click(function(){
+		alert('초기 시안으로, 실제 작업물과 다소 차이가 있을 수 있는 점 참고 부탁 드립니다.');
 	});
 
 });
